@@ -32,16 +32,3 @@
 - [NewsAPI](https://newsapi.org/)
 - [Unsplash API](https://unsplash.com/developers)
 
----
-
-## 📸 Demo
-
-_Include a link to a live demo or screenshot here if available._
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/cityscope.git
