@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#title_name {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    cursor: url('img/icons8-cursor-66.png'), auto;
+
+}
+
+/* Form */
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Flexbox layout for data and forecast blocks */
+.flex-container {
+    display: flex;
+    gap: 30px; /* spacing between the blocks */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Style for the blocks with data */
+#data_result, #forecast, #data_news  {
+    display: none; /* Hidden by default */
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#data_result p, #forecast p , #data_news p{
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+#data_news img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: inline-block !important;
+}
+
+#data_news a {
+    color: cornflowerblue;
+}
+
+.news-description {
+    text-align: left; 
+    font-size: 14px !important; 
+    line-height: 1.5; 
+    color: #333; 
+}
+
+.news-source-and-date {
+    font-size: 11px !important;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.input-icon {
+  width: 20px; 
+  height: 20px;
+  vertical-align: middle; 
+  margin-bottom: 2px;
+}
+
+.header_with_icon {
+  display: flex;
+  align-items: center;
+  
+  width: 340px;
+  height: 24px;
+}
+
+.header_with_icon_forecast {
+  display: flex;
+  align-items: center;
+
+}
+
+.small_icon {
+  width: 24px !important;
+  
+  margin-right: 5px !important;
+}
